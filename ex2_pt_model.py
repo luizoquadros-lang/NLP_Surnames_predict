@@ -101,8 +101,8 @@ for i in range(steps):
     ix = torch.randint(0, Xtr.shape[0], (batch_size,), generator=g)
 
     # forward pass
-    emb = C[Xtr[ix]] # (batch_size, block_size, emb_dim: (32, 4, 12))
-    h = torch.tanh(emb.view(-1, block_size * emb_dim) @ W1 + b1) # (batch_size, hidden_dim: (32,100))
+    emb = C[Xtr[ix]] # (batch_size, block_size, emb_dim: (32, 4, 8))
+    h = torch.tanh(emb.view(-1, block_size * emb_dim) @ W1 + b1) # (batch_size, hidden_dim: (32,50))
     logits = h @ W2 + b2 # (batch_size, vocab_size: (32, 39))
     loss = F.cross_entropy(logits, Ytr[ix])
 
