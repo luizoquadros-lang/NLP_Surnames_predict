@@ -1,9 +1,8 @@
 # NLP_Surnames_generator
 
-This repository contains the materials for Assignment 2 of the NLP course.
-Both Python files, as well as the Portuguese and Spanish datasets, are available here.
+A Natural Language Processing (NLP) project that explores character-based language models for surname generation in Portuguese and Spanish.
 
-This work consists of two character-based language models, which are available independently from each other:
+This repository contains the source code and datasets used to train and evaluate two independent language models:
 
     ex2_es_model – a model trained on the Spanish language dataset available in this repository.
 
